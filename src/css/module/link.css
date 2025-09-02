@@ -1,0 +1,4 @@
+.listLink-item-link {
+  color: var(--link);
+  text-decoration: underline;
+}

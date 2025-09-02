@@ -1,0 +1,906 @@
+{
+  "html": {
+    "icon": {
+      "url": "./public/01-html.png"
+    },
+    "content": [
+      {
+        "html": {
+          "id": 1,
+          "title": "Primeros Pasos",
+          "contentPage": [
+            {
+              "id": 1,
+              "subTitle": "¿Qué es y porqué debes aprenderlo?",
+              "text": [
+                "HTML (HyperText Markup Language) es un lenguaje de marcado que se utiliza para crear páginas web. Está compuesto por etiquetas que se utilizan para definir la estructura y el contenido de una página web",
+                "Aprender HTML te permite crear y personalizar proyectos web de manera más efectiva y te ofrece una mayor comprensión de cómo funcionan los sitios web y cómo se pueden mejorar. Además, conocer HTML puede ser útil para trabajar en áreas relacionadas con la optimización de motores de búsqueda (SEO).",
+                "En resumen, aprender HTML es esencial para cualquiera que quiera desarrollar o trabajar con sitios web, y puede abrir muchas oportunidades en el mundo laboral y en el desarrollo personal."
+              ]
+            },
+            {
+              "id": 2,
+              "subTitle": "Diferencias con otros lenguajes de programación",
+              "text": [
+                "HTML es un lenguaje de marcado, mientras que otros lenguajes son lenguajes de programación. HTML se utiliza para definir la estructura y el contenido de una página web, mientras que los lenguajes de programación se utilizan para escribir código que realiza una tarea específica.",
+                " HTML no es un lenguaje de programación, por lo que no se pueden escribir programas con él. Por otro lado, los lenguajes de programación se utilizan para escribir programas que realizan tareas específicas. HTML no tiene ninguna capacidad de lógica, mientras que los lenguajes de programación tienen capacidades de lógica y control. HTML no tiene ninguna capacidad de almacenamiento de datos, mientras que los lenguajes de programación tienen capacidades de almacenamiento de datos."
+              ]
+            },
+            {
+              "id": 3,
+              "subTitle": "Ejemplo de un documento HTML",
+              "language": "HTML",
+              "code": [
+                "<!DOCTYPE HTML>",
+                "<html>",
+                "<body>",
+                "<p>Antes del script...</p>",
+                "<script> alert( '¡Hola, mundo!' ); </script>",
+                "<p>...Después del script.</p>",
+                "</body>",
+                "</html>"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Introduction": {}
+      }
+    ],
+    "sidebar": [
+      {
+        "id": 1,
+        "link": "home",
+        "text": "Home"
+      },
+      {
+        "id": 2,
+        "link": "Introduction",
+        "text": "introducción"
+      }
+    ]
+  },
+  "css": {
+    "icon": {
+      "url": "./public/02-css.png"
+    },
+    "content": [
+      {
+        "home": {
+          "id": 1,
+          "title": "¿Qué es CSS?",
+          "contentPage": [
+            {
+              "id": 1,
+              "subTitle": "",
+              "list": [
+                {
+                  "id": 1,
+                  "text": "CSS significa hojas de estilo en cascada."
+                },
+                {
+                  "id": 2,
+                  "text": "CSS describe cómo se deben mostrar los elementos HTML en la pantalla, el papel o en otros medios."
+                },
+                {
+                  "id": 3,
+                  "text": "CSS ahorra mucho trabajo. Puede controlar el diseño de varias páginas web a la vez."
+                },
+                {
+                  "id": 4,
+                  "text": "Las hojas de estilo externas se almacenan en archivos CSS."
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "subTitle": "Demostración de CSS - Una página HTML - ¡Estilos múltiples!",
+              "content": [
+                {
+                  "id": 1,
+                  "text": "Aquí mostraremos una página HTML con cuatro hojas de estilo diferentes. Haga clic en los enlaces \"Hoja de estilo 1\", \"Hoja de estilo 2\", \"Hoja de estilo 3\", \"Hoja de estilo 4\" a continuación para ver los diferentes estilos:"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "sidebar": []
+  },
+  "javascript": {
+    "icon": {
+      "url": "/public/03-javascript.png"
+    },
+    "content": [
+      {
+        "introduction": [
+          {
+            "id": 1,
+            "title": "Una Introducción a JavaScript",
+            "contentPage": [
+              {
+                "id": 1,
+                "subTitle": "¿Qué es CSS?",
+                "text": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2
+      },
+      {
+        "id": 3
+      },
+      {
+        "id": 4
+      },
+      {
+        "hello-word": [
+          {
+            "id": 5,
+            "title": "¡Hola, mundo!",
+            "contentPage": [
+              {
+                "id": 0,
+                "subTitle": "¡Hola, mundo!",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "Esta parte del tutorial trata sobre el núcleo de JavaScript, el lenguaje en si."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Pero necesitamos un entorno de trabajo para ejecutar nuestros scripts y, dado que este libro está en línea, el navegador es una buena opción. Mantendremos la cantidad de comandos específicos del navegador (como alert) al mínimo para que no pases tiempo en ellos si planeas concentrarte en otro entorno (como Node.js). Nos centraremos en JavaScript en el navegador en la siguiente parte del tutorial."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Primero, veamos cómo adjuntamos un script a una página web. Para entornos del lado del servidor (como Node.js), puedes ejecutar el script con un comando como \"node my.js\"."
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "subTitle": "La etiqueta “script”",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "Los programas de JavaScript se pueden insertar en casi cualquier parte de un documento HTML con el uso de la etiqueta <script>."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Por ejemplo:",
+                    "language": "HTML",
+                    "code": [
+                      "<!DOCTYPE HTML>",
+                      "<html>",
+                      " ",
+                      "<body>",
+                      " ",
+                      "    <p>Antes del script...</p>",
+                      " ",
+                      "    <script>",
+                      "        alert( '¡Hola, mundo!' );",
+                      "    </script>",
+                      " ",
+                      "    <p>...Después del script.</p>",
+                      "</body>",
+                      "</html>"
+                    ]
+                  },
+                  {
+                    "id": 2,
+                    "text": "Puedes ejecutar el ejemplo haciendo clic en el botón “Play” en la esquina superior derecha del cuadro de arriba."
+                  },
+                  {
+                    "id": 3,
+                    "text": "La etiqueta <script> contiene código JavaScript que se ejecuta automáticamente cuando el navegador procesa la etiqueta."
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "subTitle": "Marcado moderno",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "La etiqueta <script> tiene algunos atributos que rara vez se usan en la actualidad, pero aún se pueden encontrar en código antiguo:"
+                  },
+                  {
+                    "id": 1,
+                    "subTitle": "El atributo type: <script type=…>",
+                    "text": "El antiguo estándar HTML, HTML4, requería que un script tuviera un type. Por lo general, era type=\"text/javascript\". Ya no es necesario. Además, el estándar HTML moderno cambió totalmente el significado de este atributo. Ahora, se puede utilizar para módulos de JavaScript. Pero eso es un tema avanzado, hablaremos sobre módulos en otra parte del tutorial."
+                  },
+                  {
+                    "id": 2,
+                    "subTitle": "Comentarios antes y después de los scripts.",
+                    "text": "En libros y guías muy antiguos, puedes encontrar comentarios dentro de las etiquetas <script>, como el siguiente:",
+                    "language": "js",
+                    "code": [
+                      "    <script type=\"text/javascript\"><!--",
+                      "        ...",
+                      "    //--></script>"
+                    ]
+                  },
+                  {
+                    "id": 3,
+                    "text": "Este truco no se utiliza en JavaScript moderno. Estos comentarios ocultaban el código JavaScript de los navegadores antiguos que no sabían cómo procesar la etiqueta <script>. Dado que los navegadores lanzados en los últimos 15 años no tienen este problema, este tipo de comentario puede ayudarte a identificar códigos realmente antiguos."
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "subTitle": "Scripts externos",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "Si tenemos un montón de código JavaScript, podemos ponerlo en un archivo separado."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Los archivos de script se adjuntan a HTML con el atributo src:",
+                    "language": "js",
+                    "code": [
+                      "<script src=\"/path/to/script.js\"></script>"
+                    ]
+                  },
+                  {
+                    "id": 2,
+                    "text": "Aquí, /path/to/script.js es una ruta absoluta al archivo de script desde la raíz del sitio. También se puede proporcionar una ruta relativa desde la página actual. Por ejemplo, src=\"script.js\" significaría un archivo \"script.js\" en la carpeta actual."
+                  },
+                  {
+                    "id": 3,
+                    "text": "También podemos dar una URL completa. Por ejemplo:",
+                    "language": "js",
+                    "code": [
+                      "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js\"></script>"
+                    ]
+                  },
+                  {
+                    "id": 4,
+                    "text": "Para adjuntar varios scripts, usa varias etiquetas:",
+                    "language": "js",
+                    "code": [
+                      "<script src=\"/js/script1.js\"></script>",
+                      "<script src=\"/js/script2.js\"></script>",
+                      "…"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "subTitle": "Tareas",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "Crea una página que muestre el mensaje “¡Soy JavaScript!"
+                  },
+                  {
+                    "id": 1,
+                    "text": "Hazlo en un sandbox o en tu disco duro, no importa, solo asegúrate de que funcione."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Mostrar una alerta con un escript externo"
+                  },
+                  {
+                    "id": 3,
+                    "text": "Toma la solución de la tarea anterior Mostrar una alerta. Modificarla extrayendo el contenido del script a un archivo externo alert.js, ubicado en la misma carpeta."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Abrir la página, asegurarse que la alerta funcione."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code-architecture": [
+          {
+            "id": 6,
+            "title": "Estructura del código",
+            "contentPage":[
+              {
+                "id": 0,
+                "subTitle": "Estructura del código",
+                "text":[
+                  {
+                    "id": 0,
+                    "text": "Lo primero que estudiaremos son los bloques de construcción del código."
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "subTitle": "Sentencia",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "Las sentencias son construcciones sintácticas y comandos que realizan acciones."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Ya hemos visto una sentencia, alert('¡Hola mundo!'), que muestra el mensaje “¡Hola mundo!”."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Podemos tener tantas sentencias en nuestro código como queramos, las cuales se pueden separar con un punto y coma."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Por ejemplo, aquí separamos “Hello World” en dos alerts:",
+                    "language": "js",
+                    "code": [
+                      "alert('Hola'); alert('Mundo');"
+                    ]
+                  },
+                  {
+                    "id": 4,
+                    "text": "Generalmente, las sentencias se escriben en líneas separadas para hacer que el código sea más legible:",
+                    "language": "js",
+                    "code": [
+                      "alert('Hola');",
+                      "alert('Mundo');"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "subTitle": "Punto y coma",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "Se puede omitir un punto y coma en la mayoría de los casos cuando existe un salto de línea."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Esto también funcionaría:",
+                    "language": "js",
+                    "code": [
+                      "alert('Hola');",
+                      " alert('Mundo');"
+                    ]
+                  },
+                  {
+                    "id": 2,
+                    "text": "Aquí, JavaScript interpreta el salto de línea como un punto y coma “implícito”. Esto se denomina inserción automática de punto y coma."
+                  },
+                  {
+                    "id": 3,
+                    "text": "En la mayoría de los casos, una nueva línea implica un punto y coma. Pero “en la mayoría de los casos” no significa “siempre”!"
+                  },
+                  {
+                    "id": 4,
+                    "text": "Hay casos en que una nueva línea no significa un punto y coma. Por ejemplo:",
+                    "code": [
+                      "alert(3 +;",
+                      "2 1",
+                      "3 + 2);"
+                    ]
+                  },
+                  {
+                    "id": 5,
+                    "text": "El código da como resultado 6 porque JavaScript no inserta punto y coma aquí. Es intuitivamente obvio que si la línea termina con un signo más \"+\", es una “expresión incompleta”, un punto y coma aquí sería incorrecto. Y en este caso eso funciona según lo previsto."
+                  },
+                  {
+                    "id": 6,
+                    "text": "Pero hay situaciones en las que JavaScript “falla” al asumir un punto y coma donde realmente se necesita."
+                  },
+                  {
+                    "id": 7,
+                    "text": "Los errores que ocurren en tales casos son bastante difíciles de encontrar y corregir."
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "subTitle": "Un ejemplo de error",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "Si tienes curiosidad por ver un ejemplo concreto de tal error, mira este código:",
+                    "language": "js",
+                    "code": [
+                      "alert(\"Hello\");",
+                      "",
+                      "[1, 2].forEach(alert);"
+                    ]
+                  },
+                  {
+                    "id": 1,
+                    "text": "No es necesario pensar en el significado de los corchetes [] y forEach todavía, los estudiaremos más adelante. Por ahora, solo recuerda el resultado del código: muestra Hello, luego 1, luego 2."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Quitemos el punto y coma del alert:",
+                    "code":[
+                      "alert(\"Hello\")",
+                      "",
+                      "[1, 2].forEach(alert);"
+                    ]
+                  },
+                  {
+                    "id": 2,
+                    "text": "La diferencia, comparando con el código anterior, es de solo un carácter: falta el punto y coma al final de la primera línea."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Esta vez, si ejecutamos el código, solo se ve el primer Hello (y un error pero necesitas abrir la consola para verlo). Los números no aparecen más."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Esto ocurre porque JavaScript no asume un punto y coma antes de los corchetes [...], entonces el código del primer ejemplo se trata como una sola sentencia."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Así es como lo ve el motor:",
+                    "code":[
+                      "alert(\"Hello\")[1, 2].forEach(alert);"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": [
+          {
+            "id": 29,
+            "title": "Objetos",
+            "contentPage": [
+              {
+                "id": 0,
+                "subTitle": "Objetos",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "Como aprendimos en el capítulo Tipos de datos, hay ocho tipos de datos en JavaScript. Siete de ellos se denominan “primitivos”, porque sus valores contienen solo un dato (sea un string, un número o lo que sea)."
+                  },
+                  {
+                    "id": 1,
+                    "text": "En contraste, los objetos son usados para almacenar colecciones de varios datos y entidades más complejas asociados con un nombre clave. En JavaScript, los objetos penetran casi todos los aspectos del lenguaje. Por lo tanto, debemos comprenderlos primero antes de profundizar en cualquier otro lugar."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Podemos crear un objeto usando las llaves {…} con una lista opcional de propiedades. Una propiedad es un par “key:value”, donde key es un string (también llamado “nombre clave”), y value puede ser cualquier cosa. P.D. Para fines prácticos de la lección, nos referiremos a este par de conceptos como “clave:valor”."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Podemos imaginar un objeto como un gabinete con archivos firmados. Cada pieza de datos es almacenada en su archivo por la clave. Es fácil encontrar un archivo por su nombre o agregar/eliminar un archivo.",
+                    "svg": "gabinete.svg"
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "subTitle": "Literales y propiedades",
+                "text": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "array": [
+          {
+            "id": 40,
+            "title": "Array",
+            "contentPage": [
+              {
+                "id": 0,
+                "subTitle": "Arrays",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "Los objetos te permiten almacenar colecciones de datos a través de nombres. Eso está bien."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Pero a menudo necesitamos una colección ordenada, donde tenemos un 1ro, un 2do, un 3er elemento y así sucesivamente. Por ejemplo, necesitamos almacenar una lista de algo: usuarios, bienes, elementos HTML, etc."
+                  },
+                  {
+                    "id": 2,
+                    "text": "No es conveniente usar objetos aquí, porque no proveen métodos para manejar el orden de los elementos. No podemos insertar una nueva propiedad “entre” los existentes. Los objetos no están hechos para eso."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Existe una estructura llamada Array (llamada en español arreglo o matriz/vector) para almacenar colecciones ordenadas."
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "subTitle": "Declaración",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "Hay dos sintaxis para crear un array vacío:",
+                    "language": "js",
+                    "code": [
+                      "let arr = new Array();",
+                      "let arr = [];"
+                    ]
+                  },
+                  {
+                    "id": 1,
+                    "text": "Casi siempre se usa la segunda. Podemos suministrar elementos iniciales entre los corchetes:",
+                    "language": "js",
+                    "code": [
+                      "let fruits = [\"Apple\", \"Orange\", \"Plum\"];"
+                    ]
+                  },
+                  {
+                    "id": 2,
+                    "text": "Los elementos del array están numerados comenzando desde cero."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Podemos obtener un elemento por su número entre corchetes:",
+                    "language": "js",
+                    "code": [
+                      "let fruits = [\"Apple\", \"Orange\", \"Plum\"];",
+                      " ",
+                      "alert( fruits[0] ); // Apple",
+                      "alert( fruits[1] ); // Orange",
+                      "alert( fruits[2] ); // Plum"
+                    ]
+                  },
+                  {
+                    "id": 4,
+                    "text": "Podemos reemplazar un elemento:",
+                    "language": "js",
+                    "code": [
+                      "fruits[2] = 'Pear'; // ahora [\"Apple\", \"Orange\", \"Pear\"]"
+                    ]
+                  },
+                  {
+                    "id": 5,
+                    "text": "…o agregar uno nuevo al array:",
+                    "language": "js",
+                    "code": [
+                      "fruits[3] = 'Lemon'; // ahora [\"Apple\", \"Orange\", \"Pear\", \"Lemon\"]"
+                    ]
+                  },
+                  {
+                    "id": 6,
+                    "text": "La cuenta total de elementos en el array es su longitud length:",
+                    "language": "js",
+                    "code": [
+                      "let fruits = [\"Apple\", \"Orange\", \"Plum\"];",
+                      " ",
+                      "alert( fruits.length ); // 3"
+                    ]
+                  },
+                  {
+                    "id": 7,
+                    "text": "La cuenta total de elementos en el array es su longitud length:",
+                    "language": "js",
+                    "code": [
+                      "let fruits = [\"Apple\", \"Orange\", \"Plum\"];",
+                      " ",
+                      "alert( fruits ); // Apple,Orange,Plum"
+                    ]
+                  },
+                  {
+                    "id": 8,
+                    "text": "Un array puede almacenar elementos de cualquier tipo."
+                  },
+                  {
+                    "id": 9,
+                    "text": "Por ejemplo:",
+                    "language": "js",
+                    "code": [
+                      "// mezcla de valores",
+                      "let arr = [ 'Apple', { name: 'John' }, true, function() { alert('hello'); } ];",
+                      " ",
+                      "// obtener el objeto del índice 1 y mostrar su nombre",
+                      "alert( arr[1].name ); // John",
+                      " ",
+                      "// obtener la función del índice 3 y ejecutarla",
+                      "arr[3](); // hello"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "methods-array": [
+          {
+            "id": 41,
+            "title": "Método de Array",
+            "contentPage": [
+              {
+                "id": 0,
+                "subTitle": "Método de Array",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "Los arrays (también llamados arreglos o matrices) cuentan con muchos métodos. Para hacer las cosas más sencillas, en este capítulo se encuentran divididos en dos partes."
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "subTitle": "Agregar/remover ítems",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "Ya conocemos algunos métodos que agregan o extraen elementos del inicio o final de un array:",
+                    "list": [
+                      {
+                        "id": 0,
+                        "text": "arr.push(...items) – agrega ítems al final,"
+                      },
+                      {
+                        "id": 1,
+                        "text": "arr.pop() – extrae un ítem del final,"
+                      },
+                      {
+                        "id": 2,
+                        "text": "arr.shift() – extrae un ítem del inicio,"
+                      },
+                      {
+                        "id": 1,
+                        "text": "arr.unshift(...items) – agrega ítems al principio."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sidebar": [
+      {
+        "id": 1,
+        "link": "/javascript",
+        "text": "home"
+      },
+      {
+        "id": 2,
+        "link": "/javascript/introduction",
+        "text": "introducción"
+      },
+      {
+        "id": 5,
+        "link": "/javascript/hello-word",
+        "text": "¡Hello, word!"
+      },
+      {
+        "id": 6,
+        "link": "/javascript/code-architecture",
+        "text": "Estructura del código"
+      },
+      {
+        "id": 29,
+        "link": "/javascript/object",
+        "text": "Objetos"
+      },
+      {
+        "id": 30,
+        "link": "/javascript/reference-object",
+        "text": "referencia de Objetos y copia"
+      },
+      {
+        "id": 31,
+        "link": "/javascript/object",
+        "text": "Relación de basura"
+      },
+      {
+        "id": 32,
+        "link": "/javascript/object",
+        "text": "Método de objeto, \"this\""
+      },
+      {
+        "id": 33,
+        "link": "/javascript/object",
+        "text": "Constructor, operador, \"new\""
+      },
+      {
+        "id": 34,
+        "link": "/javascript/object",
+        "text": "Ecadenamiento opcional \"?\""
+      },
+      {
+        "id": 35,
+        "link": "/javascript/object",
+        "text": "Tipo Symbol"
+      },
+      {
+        "id": 36,
+        "link": "/javascript/object",
+        "text": "Conversión de objeto a volor primitivo"
+      },
+      {
+        "id": 37,
+        "link": "/javascript/object",
+        "text": "Métodos de tipos priitivos"
+      },
+      {
+        "id": 38,
+        "link": "/javascript/number",
+        "text": "Número"
+      },
+      {
+        "id": 39,
+        "link": "/javascript/string",
+        "text": "Cadenas de texto"
+      },
+      {
+        "id": 40,
+        "link": "/javascript/array",
+        "text": "Array"
+      },
+      {
+        "id": 41,
+        "link": "/javascript/methods-array",
+        "text": "Métodos de array"
+      },
+      {
+        "id": 42,
+        "link": "/javascript/array",
+        "text": "Iterables"
+      },
+      {
+        "id": 43,
+        "link": "/javascript/array",
+        "text": "Map y Set"
+      },
+      {
+        "id": 44,
+        "link": "/javascript/array",
+        "text": "Array"
+      }
+    ]
+  },
+  "sqlite": {
+    "icon":{},
+    "content": [
+      {
+        "introduction": [
+          {
+            "id": 1,
+            "title": "Una Introducción a SQLite",
+            "contentPage": [
+              {
+                "id": 1,
+                "subTitle": "SQLite de Python",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "El módulo Python SQLite3, se utiliza para integrar la base de datos SQLite con Python. Es una API DBI 2.0 estandarizada de Python y poporciona una interfaz sencilla y fácil de usar para interactuar con base de datos SQLite. No es necesario instalar este módulo por separado, ya que viene con Python a partir de la versión 2.5x"
+                  },
+                  {
+                    "id": 1,
+                    "text": "Este tutorial de Python SQLite te ayudará a aprender a usar SQLite3 con Python desde lo básico hasta avanzar con la ayuda de ejemplos buenos y bien explicados y también contiene ejercicios para perfeccionar tus habilidades.",
+                    "listLink": [
+                      {
+                        "id": 0,
+                        "subTitle": "Introdución",
+                        "links": [
+                          {
+                            "id": 0,
+                            "text": "Introducción a SQLite en Python",
+                            "link": "/sqlite/introduction"
+                          },
+                          {
+                            "id": 1,
+                            "text": "Python SQLite <--> Conexión a la base de datos",
+                            "link": "/sqlite/connection-to-database"
+                          },
+                          {
+                            "id": 2,
+                            "text": "Tipos de datos de SQLite y sus tipos de Python correspondiente",
+                            "link": "/sqlite/types-data"
+                          }
+                        ]
+                      },
+                      {
+                        "id":1,
+                        "subTitle": "Consulta SQLite",
+                        "links": [
+                          {
+                            "id": 0,
+                            "text": "Python SQLite <--> Objeto Cursor",
+                            "link": "/sqlite/object-cursor"
+                          },
+                          {
+                            "id": 1,
+                            "text": "Python SQLite <--> Crear Tabla",
+                            "link": "/sqlite/create-table"
+                          },
+                          {
+                            "id": 2,
+                            "text": "Python SQLite <--> insertar datos",
+                            "link": "/sqlite/insert-data"
+                          },
+                          {
+                            "id": 3,
+                            "text": "Python SQLite <--> Seleccionar datos de una tabla",
+                            "link": "/sqlite/select-data"
+                          },
+                          {
+                            "id": 4,
+                            "text": "Python SQLite <--> Cláusula WHERE",
+                            "link": "/sqlite/clasuse-where"
+                          },
+                          {
+                            "id": 5,
+                            "text": "Python SQLite <--> Cláusula OREDER BY",
+                            "link": "/sqlite/clasuse-order"
+                          },
+                          {
+                            "id": 6,
+                            "text": "Python SQLite <--> Cláusula LIMIT",
+                            "link": "/sqlite/clasuse-limit"
+                          },
+                          {
+                            "id": 7,
+                            "text": "Python SQLite <--> Cláusula JOIN",
+                            "link": "/sqlite/clasuse-join"
+                          },
+                          {
+                            "id": 8,
+                            "text": "Python SQLite <--> Eliminar datos de una tabla",
+                            "link": "/sqlite/delete-data"
+                          },
+                          {
+                            "id": 9,
+                            "text": "Python SQLite <--> Eliminar datos de una tabla",
+                            "link": "/sqlite/delete-data"
+                          },
+                          {
+                            "id": 10,
+                            "text": "Python SQLite <--> Eliminar una tabla",
+                            "link": "/sqlite/delete-table"
+                          },
+                          {
+                            "id": 11,
+                            "text": "Python SQLite <--> Actualizar datos",
+                            "link": "/sqlite/update-table"
+                          },
+                          {
+                            "id": 12,
+                            "text": "Python SQLite <--> Actualizar columna específica",
+                            "link": "/sqlite/update-column"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sidebar": [
+      {
+        "id": 1,
+        "link": "/sqlite",
+        "text": "home"
+      },
+      {
+        "id": 2,
+        "link": "/sqlite/introduction",
+        "text": "introducción"
+      }
+    ]
+  }
+}

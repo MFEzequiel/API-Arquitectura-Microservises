@@ -1,0 +1,74 @@
+.container-header, .line-numbers-rows .code-body, code[class*='language-']{
+  display: flex;
+}
+
+.container-header {
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  gap: 20px;
+}
+
+.icon-lenguage {
+  width: 200px;
+  height: auto;
+}
+
+.code-editor {
+  background-color: #282a36;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00000033;
+  overflow: auto;
+  width: 600px;
+}
+
+.code-body {
+  padding: 10px;
+  color: aliceblue;
+  display: flex;
+  gap: 10px;
+}
+
+.line-numbers-rows {
+  border-bottom: 1px solid #444;
+  padding: 1em 0px 0.8em;
+  border: 0px;
+  background: var(--prismLineNumbersBg);
+  width: auto;
+  user-select: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.code-body {
+  flex-direction: column;
+}
+
+code[class*='language-'] {
+  padding: 1em 0px 0.8em 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line-number {
+  color: rgb(97, 201, 149);
+  padding: 1em 0px 0.8em;
+}
+
+.line-content {
+  color: #fff;
+  padding-left: 20px;
+}
+
+.attribute {
+  color: rgb(74, 255, 255);
+}
+
+@media only screen and (max-width: 980px) {
+  .container-header {
+    flex-direction: column;
+  }
+}

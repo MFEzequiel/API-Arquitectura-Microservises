@@ -1,0 +1,15 @@
+.item-link:hover {
+    color: var(--White);
+    border-bottom: 2px solid var(--Lime-Green);
+  cursor: pointer;
+}
+
+.header__request:hover {
+    background-image: linear-gradient(to right, var(--Grayish-Blue), var(--Lime-Green),var(--Bright-Cyan));
+    outline: 2px solid var(--Bright-Cyan);
+  cursor: pointer;
+}
+
+.form__bt:hover {
+  cursor: pointer;
+}

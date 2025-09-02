@@ -1,0 +1,6 @@
+:root[data-theme='light'] {
+  --color-text: #222;
+  --backgruond-color: hsl(220, 16%, 96%);
+  --theme: #fff;
+  --link: #06f;
+}
