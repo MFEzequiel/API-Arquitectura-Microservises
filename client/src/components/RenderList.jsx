@@ -11,6 +11,16 @@ export function RenderList ({ list }) {
   )
 }
 
+export function RenderListOrden ({ listOR }) {
+  return (
+    <ol className='listOrden'>
+      {listOR.map(el => (
+        <li key={el.id}>{el.text}</li>
+      ))}
+    </ol>
+  )
+}
+
 export function RenderListLink ({ listLink }) {
   return (
     <>
@@ -44,7 +54,7 @@ export function RenderListLinkList ({ listLink }) {
               {
                 el.links ? el.links.map(el2 => (
                   <li className="listLink-item" key={el2.id}>
-                    <NavLink key={el2.id} className="listLink-item-link">{el2.text}</NavLink>
+                    <NavLink key={el2.id} className="listLink-item-link" to={el2.link}>{el2.text}</NavLink>
                   </li>
                 )) : ''
               }

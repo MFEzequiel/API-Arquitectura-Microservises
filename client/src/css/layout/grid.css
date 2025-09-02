@@ -41,10 +41,6 @@
   gap: 20px;
 }
 
-.list {
-  list-style: disc;
-}
-
 .container-element,
 .container-page {
   flex-direction: row;

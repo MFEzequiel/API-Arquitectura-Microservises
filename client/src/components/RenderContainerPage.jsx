@@ -7,14 +7,18 @@ import { ContentPage } from './RenderContentPage'
 export function MainContent () {
   const { name } = useParams()
   const { icon, content, sidebar } = useDinamicPage({ name })
-
+  
+  const isIcon = icon && icon.url ? icon : ''
+  const isContent = content ? content : []
+  const isSidebar = sidebar ? sidebar : []
+  
   return (
     <>
       <section className='container-page'>
         <div className='sidebar'>
-          <Sidebar link={sidebar} />
+          <Sidebar link={isSidebar} />
         </div>
-        <ContentPage image={icon.url} content={content} name={name} />
+        <ContentPage image={isIcon} content={isContent} name={name} />
       </section>
     </>
   )

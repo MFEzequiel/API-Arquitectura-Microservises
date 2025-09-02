@@ -6,12 +6,14 @@ import { useParams } from 'react-router-dom'
 export function ContentPage ({ image, content, name }) {
   const { subName } = useParams()
   const contentPage = content.find(el => el[subName])
-
+  const isContentPage = contentPage ? contentPage : []
+  const isSubName = isContentPage?.[subName] ? isContentPage?.[subName] : []
+  
   return (
     <div className='page-content'>
       <CardTitleLenguage image={image} text={name} />
       <section className='container-section'>
-        {contentPage?.[subName]?.map(el => (
+        {isSubName?.map(el => (
           <div className='container-content-text'>
             {el.contentPage?.map(el => (
               <>

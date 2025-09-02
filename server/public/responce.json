@@ -769,13 +769,15 @@
     ]
   },
   "sqlite": {
-    "icon":{},
+    "icon":{
+      "url": "/public"
+    },
     "content": [
       {
-        "introduction": [
+        "python-sqlite": [
           {
-            "id": 1,
-            "title": "Una Introducción a SQLite",
+            "id": 0,
+            "title": "Python SQLite",
             "contentPage": [
               {
                 "id": 1,
@@ -880,6 +882,279 @@
                             "link": "/sqlite/update-column"
                           }
                         ]
+                      },
+                      {
+                        "id": 2,
+                        "subTitle": "Trabajando con mesas",
+                        "links": [
+                          {
+                            "id": 0,
+                            "text": "Python SQLite <--> Comprueba si existe una tabla",
+                            "link": "/sqlite/exists-table"
+                          },
+                          {
+                            "id": 1,
+                            "text": "Python SQLite <--> ¿Cómo listar tablas?",
+                            "link": "/sqlite/list-table"
+                          },
+                          {
+                            "id": 2,
+                            "text": "Python SQLite <--> ¿Cámo modificar una tablas?",
+                            "link": "/sqlite/modifyc-table"
+                          },
+                          {
+                            "id": 3,
+                            "text": "Python SQLite <--> ¿Cámo modificar eliminar una fila específica de una tablas?",
+                            "link": "/sqlite/delete-specific-row"
+                          },
+                          {
+                            "id": 4,
+                            "text": "Python SQLite <--> ¿Cámo modificar actualizar todos los valores de una columna específica de una tablas?",
+                            "link": "/sqlite/update-specific-column"
+                          }
+                        ]
+                      },
+                      {
+                        "id": 3,
+                        "subTitle": "Trabajando con imagenes",
+                        "links": [
+                          {
+                            "id": 0,
+                            "text": "Python SQLite <--> ¿Cómo insertar una imagen?",
+                            "link":"/sqlite/insert-image"
+                          },
+                          {
+                            "id": 1,
+                            "text": "Python SQLite <--> ¿Cómo leer una imagen?",
+                            "link":"/sqlite/read-image"
+                          },
+                          {
+                            "id": 2,
+                            "text": "Python SQLite <--> Almacenamiento de imagen",
+                            "link":"/sqlite/storage-image"
+                          }
+                        ]
+                      }, 
+                      {
+                        "id": 3,
+                        "subTitle": "Ejercicios",
+                        "links": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "introduction": [
+          {
+            "id": 1,
+            "title": "Una Introducción a SQLite",
+            "contentPage": [
+              {
+                "id": 0,
+                "subTitle": "Introducción a SQLite en Python",
+                "text": [
+                  {
+                    "id": 0,
+                    "text": "SQLite es un motor de base de datos SQL ligero, rápido e integrado. SQLite es perfecto para aplicaciones pequeñas y medianas, creación de prototipos, sistemas integrados y almacenamiento de datos locales Python aplicaciones porque no requiere un proceso de servidor separado como otros sistemas de gestión de bases de datos relacionales (RDBMS) como MySQL o PostgreSQL."
+                  },
+                  {
+                    "id": 1,
+                    "subTitle": "Características de SQLite:",
+                    "listOR": [
+                      {
+                        "id": 0,
+                        "text": "Sin servidor"
+                      },
+                      {
+                        "id": 1,
+                        "text": "Auto contenido"
+                      },
+                      {
+                        "id": 2,
+                        "text": "Configuración cero"
+                      },
+                      {
+                        "id": 3,
+                        "text": "Transaccional"
+                      },
+                      {
+                        "id": 4,
+                        "text": "Base de dato única"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 2,
+                    "text": "No necesitamos instalar nada adicional para comenzar porque Python tiene soporte integrado para SQLite a través de módulo sqlite3. Subestimemos cada una de las características en detalle."
+                  },
+                  {
+                    "id": 3,
+                    "subTitle": "Sin Servidor",
+                    "text": "Generalmente, un RDBMS como MySQL, PostgreSQL, etc., necesita un proceso de servidor separado para funcionar. Las aplicaciones que desean acceder al servidor de base de datos utilizan TCP/IP protocolo para enviar y recibir solicitudes y se llama cliente/servidor arquitectura. El siguiente diagrama ilustra el funcionamiento de las bases de datos relacionales:"
+                  },
+                  {
+                    "id": 4,
+                    "text": "SQLite no requiere un servidor correr. La base de datos SQLite lee y escribe directamente desde los archivos de base de datos almacenados en el disco y las aplicaciones interactúan con esa base de datos SQLite. Una de las mayores ventajas de SQLite es que es serverless. Esto es lo que eso significa:",
+                    "list": [
+                      {
+                        "id": 0,
+                        "text": "No hay ningún proceso de servidor separado que administrar. El motor SQLite es incrustado directamente en el aplicación."
+                      },
+                      {
+                        "id": 1,
+                        "text": "Todo lo que necesitas es el Archivo de base de datos SQLite, tu programa puede leer desde y escribir a él sin conectarse a un servicio remoto."
+                      },
+                      {
+                        "id": 2,
+                        "text": "Esto reduce arriba, complejidad de la configuración y dependencias, lo que hace que SQLite sea perfecto para aplicaciones de escritorio, aplicaciones móviles, dispositivos IoT o scripts Python livianos basados en datos."
+                      }
+                    ]
+                  },
+                  {
+                    "id": 4,
+                    "subTitle": "Autocontenido",
+                    "text": "SQLite es autónomo, esto es lo que significa:",
+                    "list": [
+                      {
+                        "id": 0,
+                        "text": "Tiene Sin dependencias externas. Todo lo que necesita está incluido en un biblioteca única."
+                      },
+                      {
+                        "id": 1,
+                        "text": "Toda la base de datos (esquema + datos) se almacena en uno solo .sqlite o .db archivo."
+                      },
+                      {
+                        "id": 2,
+                        "text": "Este archivo puede ser copiado, respaldado, compartido o movido como cualquier otro documento."
+                      }
+                    ]
+                  },
+                  {
+                    "id": 5,
+                    "subTitle": "Beneficios clave de ser autónomo:",
+                    "list": [
+                      {
+                        "id": 0,
+                        "text": "Portabilidad: Mueva el archivo de base de datos entre máquinas o plataformas sin preocuparse por la pérdida o corrupción de datos."
+                      },
+                      {
+                        "id": 1,
+                        "text": "Integración: Agrupe fácilmente bases de datos SQLite dentro de aplicaciones, especialmente paquetes o herramientas de Python."
+                      }
+                    ]
+                  },
+                  {
+                    "id": 6,
+                    "subTitle": "Configuración cero",
+                    "text": "A diferencia de otras bases de datos, SQLite no requiere ninguna configuración:",
+                    "list": [
+                      {
+                        "id": 0,
+                        "text": "No se necesitan archivos de configuración ni servicios de inicio."
+                      },
+                      {
+                        "id": 1,
+                        "text": "Puede comenzar a utilizar SQLite tan pronto como importe el módulo sqlite3 en Python."
+                      },
+                      {
+                        "id": 2,
+                        "text": "Simplemente podemos conectarnos a un archivo de base de datos y, si no existe, SQLite lo crea automáticamente."
+                      },
+                      {
+                        "id": 3,
+                        "text": "Ejemplo: Conexión a una base de datos SQLite en Python"
+                      }
+                    ],
+                    "language": "sqlite",
+                    "code": [
+                      "import sqlite3 as sq3",
+                      "conn = sq3.connect('example.db') # crear un nuevo archivo de bse de datos si no existe",
+                      "cur = conn.cursor()"
+                    ]
+                  },
+                  {
+                    "id": 7,
+                    "subTitle": "Transaccional",
+                    "list": [
+                      {
+                        "id": 0,
+                        "text": "SQLite admite completamente ÁCIDO Transacciones (atomicidad, consistencia, aislamiento, durabilidad):"
+                      },
+                      {
+                        "id": 1,
+                        "text": "Cada operación en SQLite es atómico, es decir, los cambios se aplican completamente o no se aplican en absoluto."
+                      },
+                      {
+                        "id": 2,
+                        "text": "De forma predeterminada, SQLite envuelve comandos como INSERT, UPDATE y DELETE dentro de transacciones implícitas, lo que garantiza la integridad de los datos."
+                      }
+                    ]
+                  },
+                  {
+                    "id": 8,
+                    "text": "También podemos gestionar transacciones explícitamente utilizando:",
+                    "list": [
+                      {
+                        "id": 0,
+                        "text": "BEGIN"
+                      },
+                      {
+                        "id": 1,
+                        "text": "COMMIT"
+                      },
+                      {
+                        "id": 2,
+                        "text": "ROLLBACKs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 9,
+                    "subTitle": "Ejemplo de control de transacciones:",
+                    "language": "sqlite",
+                    "code": [
+                      "conn.execute(\"BEGIN\")",
+                      "# realizar operaciones de base de datos",
+                      "conn.commit() # o conn.rollback() si algo falla"
+                    ]
+                  },
+                  {
+                    "id": 10,
+                    "subTitle": "Base de datos única",
+                    "text": "SQLite utiliza una arquitectura de base de datos de un solo archivo, lo que significa:",
+                    "lsit": [
+                      {
+                        "id": 0,
+                        "text": "Toda la base de datos, es decir, tablas, índices, activadores y datos, vive en un solo archivo."
+                      },
+                      {
+                        "id": 1,
+                        "text": "Esto simplifica la gestión de bases de datos, ya que no es necesario gestionar múltiples configuración o archivos de registro."
+                      },
+                      {
+                        "id": 2,
+                        "text": "El archivo se puede utilizar en diferentes plataformas, herramientas y lenguajes de programación."
+                      }
+                    ]
+                  },
+                  {
+                    "id": 11,
+                    "text": "Beneficios del almacenamiento de un solo archivo:",
+                    "lsit": [
+                      {
+                        "id": 0,
+                        "text": "Fácil de implementar y realizar copias de seguridad."
+                      },
+                      {
+                        "id": 1,
+                        "text": "Facilita las pruebas y la depuración."
+                      },
+                      {
+                        "id": 2,
+                        "text": "Admite operaciones de lectura simultáneas (aunque las escrituras se serializan)."
                       }
                     ]
                   }
@@ -898,9 +1173,17 @@
       },
       {
         "id": 2,
+        "link": "/sqlite/python-sqlite",
+        "text": "Python SQLite"
+      },
+      {
+        "id": 3,
         "link": "/sqlite/introduction",
         "text": "introducción"
       }
     ]
+  },
+  "proyect": {
+
   }
 }

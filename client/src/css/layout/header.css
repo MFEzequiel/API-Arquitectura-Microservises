@@ -56,7 +56,15 @@
   width: auto;
 }
 
-.listLink-list {
+.list {
+  list-style: disc;
+}
+
+.listOrden {
+  list-style: decimal;
+}
+
+.listLink-list, .listOrden, .list {
   display: flex;
   flex-direction: column;
   gap: 10px;

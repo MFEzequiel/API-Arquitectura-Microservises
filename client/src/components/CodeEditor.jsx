@@ -19,7 +19,8 @@ export function CodEditor ({ code, language = 'html' }) {
       values: /(:\s*)([^;]+)/g,
       comments: /(\/\*[\s\S]*?\*\/)/g,
       numbers: /\b\d+(\.\d+)?(px|em|rem|%|vh|vw)?\b/g
-    }
+    },
+    sqlite: {}
   }
 
   // Resaltador de sintaxis para una sola línea

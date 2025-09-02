@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { CodEditor } from './CodeEditor'
-import { RenderList, RenderListLinkList } from './RenderList'
+import { RenderList, RenderListLinkList, RenderListOrden } from './RenderList'
 import { cl } from '@/utils/logger'
 
 export function PageContent ({ content }) {
@@ -14,14 +14,14 @@ export function PageContent ({ content }) {
     <>
       {content?.map(el => (
         <>
-          {/* {el.title && (
-            <h2 key={el.id} className='title'>
+          {el.title && (
+            <p key={el.id} className='title'>
               {el.title}
-            </h2>
-          )} */}
+            </p>
+          )}
           {el.subTitle && (
             <p key={el.id} className='subTitle'>
-              {el.text}
+              {el.subTitle}
             </p>
           )}
           {el.text && (
@@ -32,8 +32,9 @@ export function PageContent ({ content }) {
           {el.code && (
             <CodEditor key={el.id} code={el.code} language={el.language} />
           )}
-          {el.list && <RenderList list={el.list} />}
-          {el.listLink && <RenderListLinkList listLink={el.listLink} />}
+          {el.list && <RenderList key={el.id} list={el.list} />}
+          {el.listOR && <RenderListOrden key={el.id} listOR={el.listOR} />}
+          {el.listLink && <RenderListLinkList key={el.id} listLink={el.listLink} />}
         </>
       ))}
     </>
